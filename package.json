@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backend": "npm install && nodemon backend.js",
-    "frontend:dev": "cd frontend && npm install && npm run start",
-    "dev": "npm install && concurrently \"npm run backend\" \"npm run frontend:dev\""
+    "backend": "cd backend && npm install && npm run dev",
+    "frontend": "cd frontend && npm install && npm run dev",
+    "dev": "npm install && concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
